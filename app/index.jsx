@@ -15,7 +15,8 @@ var { width, height } = Dimensions.get("window");
 import { debounce } from "lodash";
 import { fetchForecastData, fetchLocationData } from "../api/weather";
 import { weatherImages } from "@/constants/key";
-export default function Index() {
+export default function Index() {    
+  
   const [toggleSearch, setToggleSearch] = useState(false);
   const [locations, setlocations] = useState([]);
   // const [location, setlocation] = useState("");
